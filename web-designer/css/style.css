@@ -1,0 +1,102 @@
+* {
+    margin: 1;
+    /*distância de segurança dos elementos - afasta quem tá fora para não ficar perto de quem tá dentro*/
+    padding: 1;
+    /*afasta quem tá dentro para não ficar perto do que está fora*/
+    box-sizing: border-box;
+    /*impede que o margin e o padding não deixem passar para fora as coisas*/
+}
+
+body {
+    /*font family serif ar mais tecnologico use fontes sem serifas e sites mais informatios, educativos use com serifa, pois ajuda na leitura e cansa menos os olhos*/
+    /*tudo que estiver depois do : é parametro, antes dos : é atributo*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(52, 143, 52);
+    /*cor do fundo*/
+}
+
+header {
+    width: 85vw;
+    height: 40vh;
+    background-color: burlywood;
+    padding: 15px;
+    margin: auto;
+    /*se um elemento não tem tamanho definido, você não vai conseguir distânciar nenhum elemento dentro do margin*/
+    margin-bottom: 20px;
+    /*margem de baixo*/
+    margin-top: 8px;
+    /*margem do topo*/
+    border-radius: 15px; /*deixa a borda arredondada*/
+    box-shadow: 0 0 8px 12px rgba(0, 54, 9, 0.5); /*esquerda, em cima, lado direiro, em baixo*/
+    text-align: center; /*alinha no meio*/
+}
+
+#nomeEmpresa {
+    color: rgb(13, 54, 0);
+    font-size: 54px;
+    /*Tamanho da fonte*/
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    /*deixa um do lado do outro - os itens da lista (menu)*/
+}
+
+/*ID você só pode usar uma vez para identificar; class você pode usar várias vezes, pq ela pode ser atribuída para vários tributos*/
+
+.link_navbar {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    /*tira a decoração do texto, neste caso retirou a linha que estava abaixo das palavras do menu*/
+    padding: 20px;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(-2px) translateY(-2px);
+    border-radius: 15px; /*deixa a borda do componente arredondada*/
+}
+
+
+.link_navbar:hover {
+    background-color: black;
+    /*hover é a transição de cor quando vamos selecionar o link - isso deixa aparente o que é clicavel ou não no site*/
+    color: #FFF;
+    transition: all ease-in-out 0.5s;
+    /*tempo da transição - animação da mudança de cor no que é clicavel*/
+    transform: translateX(2px) translateY(2px);
+    /*eixo x horizontal e o y é para vertical, neste caso ficou 2px pra cima e 2px para o lado direito*/
+    cursor: pointer;
+    /*deixa o mouse como se fosse uma mão, mostra que é um link clicavel*/
+}
+
+main{
+    box-sizing: border-box;
+    position: relative;
+}
+.container {
+    width: 600px;
+    /*largura*/
+    height: 500px;
+    /*altura*/
+    background-color: rgb(10, 119, 52);
+    /*se eu quiser escolher as cores com combinações do RGB (cores primárias) coloco de 0 a 255 a altura de tom e assim defino a cor exata que quero*/
+    color: #FFF;
+    /*tag color é para atribuir cor no texto (fonte)*/
+    /*codigo hexadecimal vai de 0 a 9 e de A a F - 9 e F são os mais fortes*/
+    line-height: 3.6;
+    /*Espaçamento das linhas*/
+    box-sizing: border-box;
+}
+
+.aside {
+    padding: auto;
+    margin-top: 100px;
+}
+
+/* DIMENSÕES DE TAMANHO - px, rem, em, %, vw, vh - tipos de dimensões de tamanho - px não se move, são fixos; rem é o tipo de tamanho mais recomendável, porém precisa fazer conta.
+1rem é igual a 16px, ele calcula a quantidade de px de acordo com o seu dispositivo (aparelho que você está usando; em essa unidade de medida é rlativa ao tamanho do componente.
+% indica ele ocupa a porcentagem que você coloca de acordo com o tamanho do pai (container principal); vw usado para largura (width) e
+o vh usado para altura (height), ele fica relacionado com o tamanho da tela que você ta usando, exemplo se eu coloco 80 ele vai usar 80% da tela do dispositivo que estou usando - %, vh e vw são mais faceis de usar para fazer a expansividade do site.*/

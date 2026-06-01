@@ -1,0 +1,62 @@
+* {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(52, 143, 52);
+}
+
+head {
+    width: 85vw;
+    height: 40vh;
+    background-color: burlywood;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 12px rgba(0, 54, 9, 0.5);
+    text-align: center;
+}
+
+#nomeEmpresa {
+    color: rgb(13, 54, 0);
+    font-size: 54px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.link_navbar {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(-2px) translateY(-2px);
+    border-radius: 15px;
+}
+
+.link_navbar:hover {
+    background-color: black;
+    color: #FFF;
+    transition: all ease-in-out 0.5s;
+    transform: translateX(2px) translateY(2px);
+    cursor: pointer;
+}
+
+.aside ul {
+    list-style: none;
+}
+
+.aside ul li {
+    display: inline-block;
+}
